@@ -1,0 +1,18 @@
+@import "./variables";
+
+.advantages {
+    margin: 148px 0 144px;
+
+    &-item {
+        text-align: center;
+
+        &__image {
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import "./variables";
+
+.header {
+    min-height: 100vh;
+    background: url("../img/header.jpg") top center no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+
+    &__title {
+        color: #fff;
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        color: #fff;
+        margin-bottom: 48px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+
+        .btn {
+            &:first-child {
+                margin-right: 24px;
+            }
+        }
+    }
+}

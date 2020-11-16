@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudZilla</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/navbar-scroll.js" defer></script>
+    <script src="js/modal.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar__logo">
+            <img src="img/logo.png" alt="CloudZilla">
+        </a>
+        <ul class="navbar-menu">
+            <li class="navbar-menu__item">
+                <a href="#">Storages</a>
+            </li>
+            <li class="navbar-menu__item">
+                <a href="#">Prices</a>
+            </li>
+            <li class="navbar-menu__item">
+                <a href="#">Team</a>
+            </li>
+            <li class="navbar-menu__item">
+                <a href="#" class="btn btn-link">Sign In</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Cloud Storages Aggregator</h1>
+            <h4 class="header__subtitle">Lowest storage price ever. <br /> That's simple.</h4>
+            <div class="header__buttons">
+                <button class="btn btn-yellow">Pitch Deck</button>
+                <button class="btn btn-white">Schedule a Demo</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="img/advantages/affordable.png" alt="">
+                        </div>
+                        <h4 class="advantages-item__title">Affordable</h4>
+                        <p class="advantages-item__subtitle">
+                            <span class="color-blue">Best Price Guarantee:</span> our AI based technology allows us to
+                            keep lowest data storage costs and download fees in the industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="img/advantages/easy.png" alt="">
+                        </div>
+                        <h4 class="advantages-item__title">Easy</h4>
+                        <p class="advantages-item__subtitle">
+                            <span class="color-blue">Amazon S3 compatible API</span> to store and retrieve your data
+                            with any Decentralized Cloud Storage. Simple, seamless integration.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="img/advantages/secured.png" alt="">
+                        </div>
+                        <h4 class="advantages-item__title">Secured</h4>
+                        <p class="advantages-item__subtitle">
+                            <span class="color-blue">100% Security and Privacy</span> with a blockchain-based cloud
+                            architecture. All the users are anonymous, all the data is encrypted.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__socials">
+            <a href="#" class="footer__socials-icon">
+                <img src="img/icons/github.svg" alt="GitHub">
+            </a>
+            <a href="#" class="footer__socials-icon">
+                <img src="img/icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#" class="footer__socials-icon">
+                <img src="img/icons/telegram.svg" alt="Telegram">
+            </a>
+            <a href="#" class="footer__socials-icon">
+                <img src="img/icons/twitter.svg" alt="Twitter">
+            </a>
+            <a href="#" class="footer__socials-icon">
+                <img src="img/icons/unknown.svg" alt="Unknown">
+            </a>
+        </div>
+        <p class="footer__copyright">
+            Copyright © 2020 Cloudzilla Network. All Rights Reserved.
+        </p>
+    </footer>
+
+    <div class="modal" id="request-demo-modal">
+        <div class="modal-inner">
+            <h3 class="modal__title">Request a Demo</h3>
+            <button class="modal__close" onclick="closeModal('request-demo-modal')">
+                <img src="img/icons/close.svg" alt="">
+            </button>
+            <form class="modal-form" autocomplete="off">
+                Form
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
