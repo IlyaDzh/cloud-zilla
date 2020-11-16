@@ -1,0 +1,71 @@
+@import "./variables";
+
+.prices {
+    padding: 123px 0 80px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__table {
+        width: 100%;
+
+        .table {
+            &-column {
+                padding: 24px 20px;
+
+                &__name {
+                    color: $navy-blue;
+                    font-weight: 500;
+                }
+
+                &__desc {
+                    color: $gray;
+                    font-weight: 400;
+                }
+            }
+
+            &-row {
+                td {
+                    padding: 12px 20px;
+                }
+
+                &-blue {
+                    background: $blue;
+
+                    p {
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                }
+
+                &-gray {
+                    background: rgba($gray, 0.05);
+                }
+
+                &__provider {
+                    display: flex;
+                    align-items: center;
+
+                    &>div {
+                        margin-right: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .procent {
+        display: block;
+        font-size: 14px;
+
+        &-red {
+            color: $red;
+        }
+
+        &-green {
+            color: $green;
+        }
+    }
+}

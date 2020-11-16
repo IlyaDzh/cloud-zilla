@@ -1,0 +1,36 @@
+@import "./variables";
+
+.about {
+    background: rgba($blue, 0.1);
+    padding: 35px 53px;
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        @media (max-width: $md-width) {
+            padding-bottom: 24px;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        p {
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: $md-width) {
+            text-align: center;
+        }
+    }
+}

@@ -1,10 +1,11 @@
 @import "./variables";
 
 .advantages {
-    margin: 148px 0 144px;
+    padding: 148px 0 100px;
 
     &-item {
         text-align: center;
+        margin-bottom: 44px;
 
         &__image {
             margin-bottom: 24px;

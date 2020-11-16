@@ -1,0 +1,27 @@
+@import "./variables";
+
+.storages {
+    padding: 141px 0 116px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        margin: 0 auto 60px;
+        max-width: 500px;
+        color: $gray;
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__item {
+            margin: 0 22px 16px;
+        }
+    }
+}

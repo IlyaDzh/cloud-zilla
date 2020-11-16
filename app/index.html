@@ -19,13 +19,13 @@
         </a>
         <ul class="navbar-menu">
             <li class="navbar-menu__item">
-                <a href="#">Storages</a>
+                <a href="#storages">Storages</a>
             </li>
             <li class="navbar-menu__item">
-                <a href="#">Prices</a>
+                <a href="#prices">Prices</a>
             </li>
             <li class="navbar-menu__item">
-                <a href="#">Team</a>
+                <a href="#team">Team</a>
             </li>
             <li class="navbar-menu__item">
                 <a href="#" class="btn btn-link">Sign In</a>
@@ -47,7 +47,7 @@
     <section class="advantages">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="advantages-item">
                         <div class="advantages-item__image">
                             <img src="img/advantages/affordable.png" alt="">
@@ -59,7 +59,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="advantages-item">
                         <div class="advantages-item__image">
                             <img src="img/advantages/easy.png" alt="">
@@ -71,7 +71,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="advantages-item">
                         <div class="advantages-item__image">
                             <img src="img/advantages/secured.png" alt="">
@@ -84,6 +84,145 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about__image">
+                        <img src="img/about/about.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about__description">
+                        <p>
+                            Cloudzilla Network is a <span class="color-blue">Decentralized Cold Data Storage</span>,
+                            which is an aggregator of Decentralized Cloud Storages. They are best suited for the “cold”
+                            data, which is rarely used or accessed, but must be stored for a long time or even forever.
+                        </p>
+                        <p>
+                            With our AI-based purchasing system, we act as a
+                            <span class="color-blue">Uber for Clouds</span> by providing our users a single entry point
+                            for any available Decentralized Cloud Storage, always at the best price.
+                        </p>
+                        <p>
+                            Cloudzilla is a blockchain-based ecosystem and has its own ERC20 token called
+                            <span class="color-blue">CLZ</span> for payment purposes
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="storages" id="storages">
+        <div class="container">
+            <h1 class="storages__title">Decentralized Cloud Storages</h1>
+            <h5 class="storages__subtitle">
+                You can purchase space in any of these Storages or let our AI choose the best option:
+            </h5>
+            <div class="storages-list">
+                <a href="#" class="storages-list__item">
+                    <img src="img/storages/filecoin.png" alt="">
+                </a>
+                <a href="#" class="storages-list__item">
+                    <img src="img/storages/sia.png" alt="">
+                </a>
+                <a href="#" class="storages-list__item">
+                    <img src="img/storages/lambda.png" alt="">
+                </a>
+                <a href="#" class="storages-list__item">
+                    <img src="img/storages/storj.png" alt="">
+                </a>
+                <a href="#" class="storages-list__item">
+                    <img src="img/storages/arweave.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-separate">
+        <div class="container">
+            <hr>
+        </div>
+    </div>
+
+    <section class="prices" id="prices">
+        <div class="container">
+            <h1 class="prices__title">Pricing Comparison</h1>
+            <table class="prices__table">
+                <thead>
+                    <tr>
+                        <th class="table-column">
+                            <p class="table-column__name">Provider</p>
+                        </th>
+                        <th class="table-column">
+                            <p class="table-column__name">Storage</p>
+                            <p class="table-column__desc">Per Tb / month</p>
+                        </th>
+                        <th class="table-column">
+                            <p class="table-column__name">Retrieval</p>
+                            <p class="table-column__desc">Per Tb</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row table-row-blue">
+                        <td>
+                            <div class="table-row__provider">
+                                <div>
+                                    <img src="img/prices/cloudzilla.svg" alt="">
+                                </div>
+                                <p>Cloudzilla Network</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$2.40</p>
+                        </td>
+                        <td>
+                            <p>$1.20</p>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="table-row__provider">
+                                <div>
+                                    <img src="img/prices/sia.svg" alt="">
+                                </div>
+                                <p>SIA</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$3.74</p>
+                            <span class="procent procent-red">+ 56%</span>
+                        </td>
+                        <td>
+                            <p>$1.09</p>
+                            <span class="procent procent-green">- 9%</span>
+                        </td>
+                    </tr>
+                    <tr class="table-row table-row-gray">
+                        <td>
+                            <div class="table-row__provider">
+                                <div>
+                                    <img src="img/prices/filecoin.svg" alt="">
+                                </div>
+                                <p>Filecoin</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$4.20</p>
+                            <span class="procent procent-red">+ 75%</span>
+                        </td>
+                        <td>
+                            <p>$1.42</p>
+                            <span class="procent procent-red">+ 20%</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 

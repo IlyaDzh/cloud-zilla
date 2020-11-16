@@ -18,7 +18,6 @@ function onScroll() {
     } else {
         navbar.classList.remove("scrolled");
     }
-    console.log("render");
 }
 
 document.addEventListener("scroll", function () {

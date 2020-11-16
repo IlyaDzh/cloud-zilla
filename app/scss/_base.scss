@@ -37,6 +37,7 @@ h4 {
 
 h5 {
     font-size: 20px;
+    font-weight: 400;
 }
 
 a {
@@ -134,6 +135,15 @@ a.btn {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.section-separate {
+    hr {
+        height: 1px;
+        margin: 0;
+        border: none;
+        background: $border-gray;
+    }
 }
 
 @media (min-width: 1000px) {
