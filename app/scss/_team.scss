@@ -1,0 +1,46 @@
+@import "./variables";
+
+.team {
+    padding: 100px 0 32px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &-card {
+        background: rgba($gray, 0.05);
+        border-radius: 10px;
+        text-align: center;
+        padding: 30px;
+        height: 100%;
+
+        &__image {
+            margin-bottom: 24px;
+        }
+
+        &__fullname {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        &__position {
+            color: $gray;
+            margin-bottom: 24px;
+        }
+
+        &__description {
+            text-align: left;
+            color: rgba($black, 0.8);
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        @media (max-width: $md-width) {
+            height: auto;
+            margin-bottom: 30px;
+        }
+    }
+}

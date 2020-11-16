@@ -1,7 +1,7 @@
 @import "./variables";
 
 .prices {
-    padding: 123px 0 80px;
+    padding: 123px 0 57px;
 
     &__title {
         text-align: center;
@@ -66,6 +66,22 @@
 
         &-green {
             color: $green;
+        }
+    }
+
+    &__caption {
+        display: flex;
+        margin-top: 28px;
+        padding: 33px 20px;
+        border-top: 1px solid $border-gray;
+
+        &-icon {
+            margin-right: 10px;
+        }
+
+        &-text {
+            font-size: 14px;
+            color: $gray;
         }
     }
 }

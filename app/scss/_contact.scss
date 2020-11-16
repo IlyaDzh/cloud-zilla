@@ -1,0 +1,27 @@
+@import "./variables";
+
+.contact {
+    margin-bottom: 144px;
+
+    &-wrapper {
+        background: url("../img/contact/contact-bg.jpg") center center no-repeat;
+        min-height: 288px;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-inner {
+        padding: 20px;
+    }
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__btn {
+        margin: 0 auto;
+    }
+}
