@@ -39,7 +39,7 @@
             <h4 class="header__subtitle">Lowest storage price ever. <br /> That's simple.</h4>
             <div class="header__buttons">
                 <button class="btn btn-yellow">Pitch Deck</button>
-                <button class="btn btn-white">Schedule a Demo</button>
+                <button class="btn btn-white" onclick="openModal('request-demo-modal')">Schedule a Demo</button>
             </div>
         </div>
     </header>
@@ -450,12 +450,45 @@
 
     <div class="modal" id="request-demo-modal">
         <div class="modal-inner">
-            <h3 class="modal__title">Request a Demo</h3>
+            <h2 class="modal__title">Request a Demo</h2>
             <button class="modal__close" onclick="closeModal('request-demo-modal')">
                 <img src="img/icons/close.svg" alt="">
             </button>
             <form class="modal-form" autocomplete="off">
-                Form
+                <div class="modal-form-row">
+                    <div class="modal-form__input">
+                        <input type="text" name="first-name">
+                        <label class="modal-form__input-label" for="first-name">First Name*</label>
+                    </div>
+                    <div class="modal-form__input">
+                        <input type="text" name="last-name">
+                        <label class="modal-form__input-label" for="last-name">Last Name*</label>
+                    </div>
+                </div>
+                <div class="modal-form__input">
+                    <input type="text" name="job">
+                    <label class="modal-form__input-label" for="job">Job Title</label>
+                </div>
+                <div class="modal-form-row">
+                    <div class="modal-form__input">
+                        <input type="email" name="email">
+                        <label class="modal-form__input-label" for="email">Email*</label>
+                    </div>
+                    <div class="modal-form__input">
+                        <div class="custom-select">
+                            <select name="size">
+                                <option>Below 50</option>
+                                <option>50-99</option>
+                                <option>100-249</option>
+                                <option>250-499</option>
+                                <option>500+</option>
+                            </select>
+                            <span class="arrow"></span>
+                            <label class="modal-form__input-label" for="size">Company Size</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-yellow modal-form__btn" type="button">Book your demo now</button>
             </form>
         </div>
     </div>

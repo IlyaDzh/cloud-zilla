@@ -16,12 +16,14 @@ html.modal-open {
     background: $modal-bg;
 
     &-inner {
+        position: relative;
         overflow: hidden;
         margin: 40px auto;
         max-width: 562px;
         width: 100%;
         border-radius: 12px;
         background: #fff;
+        padding: 72px 36px;
     }
 
     &.show {
@@ -30,14 +32,109 @@ html.modal-open {
 
     &__title {
         text-align: center;
-        font-size: 36px;
-        font-weight: 500;
-        color: #fff;
+        margin-bottom: 28px;
     }
 
-    &__close {}
+    &__close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: transparent;
+        height: 35px;
+        width: 35px;
+        padding: 0;
+    }
 
     &-form {
-        padding: 72px 36px;
+        $self: &;
+
+        &-row {
+            display: flex;
+
+            #{$self}__input {
+                margin-right: 24px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            @media (max-width: $sm-width) {
+                display: block;
+            }
+        }
+
+        &__input {
+            position: relative;
+            margin-bottom: 36px;
+            width: 100%;
+
+            input {
+                border: 1px solid rgba($black, 0.15);
+                border-radius: 6px;
+                padding: 14px 17px;
+                width: 100%;
+
+                &:hover {
+                    border-color: rgba($blue, 0.5);
+                }
+
+                &:focus {
+                    border-color: $blue;
+                }
+            }
+
+            .custom-select {
+                position: relative;
+
+                select {
+                    border: 1px solid rgba($black, 0.15);
+                    border-radius: 6px;
+                    padding: 14px 17px;
+                    width: 100%;
+                    outline: none;
+                    height: 100%;
+                    appearance: none;
+
+                    &:hover {
+                        border-color: rgba($blue, 0.5);
+                    }
+
+                    &:focus {
+                        border-color: $blue;
+
+                        &+.arrow::after {
+                            background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.582 5.14098C1.311 5.40898 0.873001 5.40898 0.604001 5.14098C0.334001 4.87298 0.332001 4.43998 0.604001 4.17198L4.512 0.34198C4.782 0.0739799 5.219 0.0739799 5.491 0.34198L9.399 4.17198C9.669 4.43898 9.669 4.87298 9.399 5.14098C9.128 5.40898 8.69 5.40898 8.421 5.14098L5 1.99998L1.582 5.14098Z' fill='black'/%3E%3C/svg%3E%0A");
+                        }
+                    }
+                }
+
+                .arrow::after {
+                    content: "";
+                    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.41794 0.85899C8.68894 0.59099 9.12694 0.59099 9.39594 0.85899C9.66594 1.12699 9.66794 1.55999 9.39594 1.82799L5.48794 5.65799C5.21794 5.92599 4.78094 5.92599 4.50894 5.65799L0.600938 1.82799C0.330938 1.56099 0.330938 1.12699 0.600938 0.85899C0.871938 0.59099 1.30994 0.59099 1.57894 0.85899L4.99994 3.99999L8.41794 0.85899Z' fill='%2318181B'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    height: 6px;
+                    width: 10px;
+                    position: absolute;
+                    right: 19px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    pointer-events: none;
+                }
+            }
+
+            &-label {
+                position: absolute;
+                top: -8px;
+                left: 10px;
+                background: #fff;
+                font-size: 12px;
+                color: $blue;
+            }
+        }
+
+        &__btn {
+            margin: 0 auto;
+        }
     }
 }
