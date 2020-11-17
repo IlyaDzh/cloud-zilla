@@ -6,6 +6,10 @@
     &__title {
         text-align: center;
         margin-bottom: 60px;
+
+        @media (max-width: $sm-width) {
+            margin-bottom: 24px;
+        }
     }
 
     &__table {
@@ -24,11 +28,19 @@
                     color: $gray;
                     font-weight: 400;
                 }
+
+                @media (max-width: $sm-width) {
+                    padding: 8px 10px;
+                }
             }
 
             &-row {
                 td {
                     padding: 12px 20px;
+
+                    @media (max-width: $sm-width) {
+                        padding: 8px 10px;
+                    }
                 }
 
                 &-blue {
@@ -83,5 +95,13 @@
             font-size: 14px;
             color: $gray;
         }
+
+        @media (max-width: $sm-width) {
+            padding: 20px 10px;
+        }
+    }
+
+    @media (max-width: $sm-width) {
+        padding: 60px 0 0;
     }
 }

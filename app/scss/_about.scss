@@ -28,9 +28,9 @@
         p {
             margin-bottom: 24px;
         }
+    }
 
-        @media (max-width: $md-width) {
-            text-align: center;
-        }
+    @media (max-width: $sm-width) {
+        padding: 36px 5px;
     }
 }

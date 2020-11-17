@@ -132,7 +132,7 @@ span {
     &.btn-yellow,
     &.btn-white,
     &.btn-blue {
-        padding: 18px 36px;
+        padding: 18px 30px;
         min-height: 60px;
     }
 }
@@ -162,4 +162,8 @@ a.btn {
 
 @media (max-width: $md-width) {}
 
-@media (max-width: $sm-width) {}
+@media (max-width: $sm-width) {
+    h1 {
+        font-size: 36px;
+    }
+}

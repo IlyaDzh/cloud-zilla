@@ -12,6 +12,10 @@
         margin: 0 auto 60px;
         max-width: 500px;
         color: $gray;
+
+        @media (max-width: $sm-width) {
+            margin-bottom: 40px;
+        }
     }
 
     &-list {
@@ -22,6 +26,14 @@
 
         &__item {
             margin: 0 22px 16px;
+
+            @media (max-width: $sm-width) {
+                margin-bottom: 30px;
+            }
         }
+    }
+
+    @media (max-width: $sm-width) {
+        padding: 60px 0 30px;
     }
 }

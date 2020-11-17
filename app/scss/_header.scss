@@ -3,6 +3,7 @@
 .header {
     min-height: 100vh;
     background: url("../img/header.jpg") top center no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     padding: 100px 0;
@@ -10,11 +11,19 @@
     &__title {
         color: #fff;
         margin-bottom: 24px;
+
+        @media (max-width: $sm-width) {
+            margin-bottom: 20px;
+        }
     }
 
     &__subtitle {
         color: #fff;
         margin-bottom: 48px;
+
+        @media (max-width: $sm-width) {
+            margin-bottom: 40px;
+        }
     }
 
     &__buttons {
@@ -24,7 +33,21 @@
         .btn {
             &:first-child {
                 margin-right: 24px;
+
+                @media (max-width: $sm-width) {
+                    margin-right: 0;
+                    margin-bottom: 24px;
+                }
             }
         }
+
+        @media (max-width: $sm-width) {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: $sm-width) {
+        text-align: center;
+        padding: 110px 0;
     }
 }

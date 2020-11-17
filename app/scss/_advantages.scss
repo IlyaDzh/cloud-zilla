@@ -15,5 +15,13 @@
             margin-bottom: 8px;
             font-weight: 500;
         }
+
+        @media (max-width: $sm-width) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: $sm-width) {
+        padding: 60px 0;
     }
 }

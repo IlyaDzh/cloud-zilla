@@ -9,28 +9,71 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/navbar-scroll.js" defer></script>
+    <script src="js/menu.js" defer></script>
     <script src="js/modal.js" defer></script>
 </head>
 
 <body>
     <nav class="navbar" id="navbar">
-        <a href="index.html" class="navbar__logo">
-            <img src="img/logo.png" alt="CloudZilla">
-        </a>
-        <ul class="navbar-menu">
-            <li class="navbar-menu__item">
+        <div class="navbar-inner">
+            <button class="navbar-mobile__btn" id="mobile-menu-btn">
+                <img src="img/icons/menu-open.svg" alt="">
+                <img src="img/icons/menu-close.svg" alt="">
+            </button>
+            <a href="index.html" class="navbar__logo">
+                <img src="img/logo.png" alt="CloudZilla">
+            </a>
+            <ul class="navbar-menu">
+                <li class="navbar-menu__item">
+                    <a href="#storages">Storages</a>
+                </li>
+                <li class="navbar-menu__item">
+                    <a href="#prices">Prices</a>
+                </li>
+                <li class="navbar-menu__item">
+                    <a href="#team">Team</a>
+                </li>
+                <li class="navbar-menu__item">
+                    <a href="#" class="btn btn-link">Sign In</a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-link navbar-mobile__sign-in">
+                <img src="img/icons/sign-in-mobile.svg" alt="">
+            </a>
+        </div>
+        <ul class="navbar-mobile__list">
+            <li>
                 <a href="#storages">Storages</a>
             </li>
-            <li class="navbar-menu__item">
+            <li>
                 <a href="#prices">Prices</a>
             </li>
-            <li class="navbar-menu__item">
+            <li>
                 <a href="#team">Team</a>
             </li>
-            <li class="navbar-menu__item">
-                <a href="#" class="btn btn-link">Sign In</a>
-            </li>
         </ul>
+        <div class="navbar-mobile__footer">
+            <div class="footer__socials">
+                <a href="#" class="footer__socials-icon">
+                    <img src="img/icons/github.svg" alt="GitHub">
+                </a>
+                <a href="#" class="footer__socials-icon">
+                    <img src="img/icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="footer__socials-icon">
+                    <img src="img/icons/telegram.svg" alt="Telegram">
+                </a>
+                <a href="#" class="footer__socials-icon">
+                    <img src="img/icons/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="footer__socials-icon">
+                    <img src="img/icons/unknown.svg" alt="Unknown">
+                </a>
+            </div>
+            <p class="footer__copyright">
+                Copyright © 2020 Cloudzilla Network. All Rights Reserved.
+            </p>
+        </div>
     </nav>
 
     <header class="header">
@@ -156,7 +199,7 @@
                 <thead>
                     <tr>
                         <th class="table-column">
-                            <p class="table-column__name">Provider</p>
+                            <p class="table-column__name" style="margin-bottom: 20px;">Provider</p>
                         </th>
                         <th class="table-column">
                             <p class="table-column__name">Storage</p>
@@ -418,8 +461,10 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-inner">
-                    <h1 class="contact__title">Get Started Today</h1>
-                    <button class="btn btn-blue contact__btn">Contact Us</button>
+                    <h2 class="contact__title">Get Started Today</h2>
+                    <button class="btn btn-blue contact__btn" onclick="openModal('request-demo-modal')">
+                        Contact Us
+                    </button>
                 </div>
             </div>
         </div>

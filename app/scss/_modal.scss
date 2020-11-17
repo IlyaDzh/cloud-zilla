@@ -24,6 +24,11 @@ html.modal-open {
         border-radius: 12px;
         background: #fff;
         padding: 72px 36px;
+
+        @media (max-width: $sm-width) {
+            padding: 30px;
+            margin: 30px auto;
+        }
     }
 
     &.show {
@@ -33,6 +38,10 @@ html.modal-open {
     &__title {
         text-align: center;
         margin-bottom: 28px;
+
+        @media (max-width: $sm-width) {
+            font-size: 24px;
+        }
     }
 
     &__close {
@@ -81,6 +90,10 @@ html.modal-open {
 
                 &:focus {
                     border-color: $blue;
+                }
+
+                @media (max-width: $sm-width) {
+                    padding: 11px 15px;
                 }
             }
 
@@ -131,10 +144,22 @@ html.modal-open {
                 font-size: 12px;
                 color: $blue;
             }
+
+            @media (max-width: $sm-width) {
+                margin-bottom: 24px;
+            }
         }
 
         &__btn {
             margin: 0 auto;
+
+            @media (max-width: $sm-width) {
+                width: 100%;
+            }
         }
+    }
+
+    @media (max-width: $sm-width) {
+        padding: 20px;
     }
 }
