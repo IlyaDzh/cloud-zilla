@@ -2,7 +2,7 @@
 
 .header {
     min-height: 100vh;
-    background: url("../img/header.jpg") top center no-repeat;
+    background: url("../img/header/header.jpg") top center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -44,6 +44,16 @@
         @media (max-width: $sm-width) {
             flex-direction: column;
         }
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        background: url("../img/header/header@2x.jpg") top center no-repeat;
+        background-size: cover;
     }
 
     @media (max-width: $sm-width) {
