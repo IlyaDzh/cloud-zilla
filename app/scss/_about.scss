@@ -9,6 +9,7 @@
         align-items: center;
         justify-content: center;
         height: 100%;
+        max-width: 415px;
 
         img {
             width: 100%;
@@ -16,6 +17,7 @@
 
         @media (max-width: $md-width) {
             padding-bottom: 24px;
+            margin: 0 auto;
         }
     }
 
