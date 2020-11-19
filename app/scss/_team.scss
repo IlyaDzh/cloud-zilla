@@ -13,19 +13,24 @@
     }
 
     &-card {
+        display: block;
         background: rgba($gray, 0.05);
+        border: 2px solid rgb(250, 250, 250);
         border-radius: 10px;
         text-align: center;
         padding: 30px;
         height: 100%;
+        transition: all 0.2s ease;
 
         &__image {
             margin-bottom: 24px;
         }
 
         &__fullname {
+            color: $black;
             font-weight: 600;
             margin-bottom: 4px;
+            transition: all 0.2s ease;
         }
 
         &__position {
@@ -38,8 +43,18 @@
             color: rgba($black, 0.8);
 
             a {
-                text-decoration: underline;
+                color: rgba($black, 0.8);
             }
+        }
+
+        &:hover {
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        &:hover &__fullname {
+            color: $blue;
+            text-decoration: underline;
         }
 
         @media (max-width: $md-width) {
