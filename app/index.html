@@ -11,6 +11,7 @@
     <script src="js/navbar-scroll.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/modal.js" defer></script>
+    <script src="js/send-form.js" defer></script>
 </head>
 
 <body>
@@ -436,8 +437,7 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="https://www.linkedin.com/in/denis-vorobyov-8ab381148"
-                        target="_blank" class="team-card">
+                    <a href="https://www.linkedin.com/in/denis-vorobyov-8ab381148" target="_blank" class="team-card">
                         <div class="team-card__image">
                             <img src="img/team/noginov.png" srcset="img/team/noginov@2x.png 2x" alt="">
                         </div>
@@ -496,14 +496,14 @@
             <button class="modal__close" onclick="closeModal('request-demo-modal')">
                 <img src="img/icons/close.svg" alt="">
             </button>
-            <form class="modal-form" autocomplete="off">
+            <form class="modal-form" id="modal-form">
                 <div class="modal-form-row">
                     <div class="modal-form__input">
-                        <input type="text" name="first-name" required>
+                        <input type="text" name="first-name">
                         <label class="modal-form__input-label" for="first-name">First Name*</label>
                     </div>
                     <div class="modal-form__input">
-                        <input type="text" name="last-name" required>
+                        <input type="text" name="last-name">
                         <label class="modal-form__input-label" for="last-name">Last Name*</label>
                     </div>
                 </div>
@@ -513,7 +513,7 @@
                 </div>
                 <div class="modal-form-row">
                     <div class="modal-form__input">
-                        <input type="email" name="email" required>
+                        <input type="email" name="email">
                         <label class="modal-form__input-label" for="email">Email*</label>
                     </div>
                     <div class="modal-form__input">
@@ -530,7 +530,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-yellow modal-form__btn" type="button">Book your demo now</button>
+                <p class="modal-form__result" id="modal-form-result"></p>
+                <button class="btn btn-yellow modal-form__btn" type="submit">Book your demo now</button>
             </form>
         </div>
     </div>
