@@ -141,6 +141,10 @@ a.btn {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &.disabled {
+        cursor: no-drop;
+    }
 }
 
 .section-separate {

@@ -34,10 +34,10 @@
                     <a href="#team">Team</a>
                 </li>
                 <li class="navbar-menu__item">
-                    <a href="#" class="btn btn-link">Sign In</a>
+                    <!-- <a href="#" class="btn btn-link">Sign In</a> -->
                 </li>
             </ul>
-            <a href="#" class="btn btn-link navbar-mobile__sign-in">
+            <a class="btn btn-link navbar-mobile__sign-in disabled">
                 <img src="img/icons/sign-in-mobile.svg" alt="">
             </a>
         </div>
@@ -499,11 +499,11 @@
             <form class="modal-form" autocomplete="off">
                 <div class="modal-form-row">
                     <div class="modal-form__input">
-                        <input type="text" name="first-name">
+                        <input type="text" name="first-name" required>
                         <label class="modal-form__input-label" for="first-name">First Name*</label>
                     </div>
                     <div class="modal-form__input">
-                        <input type="text" name="last-name">
+                        <input type="text" name="last-name" required>
                         <label class="modal-form__input-label" for="last-name">Last Name*</label>
                     </div>
                 </div>
@@ -513,7 +513,7 @@
                 </div>
                 <div class="modal-form-row">
                     <div class="modal-form__input">
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                         <label class="modal-form__input-label" for="email">Email*</label>
                     </div>
                     <div class="modal-form__input">
