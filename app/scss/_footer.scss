@@ -1,11 +1,6 @@
 @import "./variables";
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 310px;
     background: $footer-gradient;
     padding: 70px 20px;
     text-align: center;
