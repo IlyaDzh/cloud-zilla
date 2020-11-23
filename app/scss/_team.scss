@@ -23,14 +23,18 @@
         transition: all 0.2s ease;
 
         &__image {
+            display: inline-block;
             margin-bottom: 24px;
         }
 
         &__fullname {
-            color: $black;
-            font-weight: 600;
             margin-bottom: 4px;
-            transition: all 0.2s ease;
+
+            a {
+                color: $black;
+                font-size: 20px;
+                font-weight: 600;
+            }
         }
 
         &__position {
@@ -43,7 +47,11 @@
             color: rgba($black, 0.8);
 
             a {
-                color: rgba($black, 0.8);
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
 
@@ -52,7 +60,7 @@
             border-radius: 10px;
         }
 
-        &:hover &__fullname {
+        &:hover &__fullname a {
             color: $blue;
             text-decoration: underline;
         }
