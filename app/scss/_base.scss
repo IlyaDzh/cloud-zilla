@@ -91,6 +91,7 @@ span {
 
     &.btn-yellow {
         background: $btn-yellow;
+        color: $black;
 
         &:hover {
             background: $btn-yellow-hover;
@@ -142,9 +143,11 @@ a.btn {
     align-items: center;
     justify-content: center;
 
-    &.disabled {
-        cursor: no-drop;
-    }
+    // &.btn-yellow {
+    //     &:hover {
+    //         color: $black;
+    //     }
+    // }
 }
 
 .section-separate {
