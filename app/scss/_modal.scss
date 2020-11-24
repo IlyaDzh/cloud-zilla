@@ -18,7 +18,6 @@ html.modal-open {
     &-inner {
         position: relative;
         overflow: hidden;
-        margin: 40px auto;
         max-width: 562px;
         width: 100%;
         border-radius: 12px;
@@ -27,12 +26,17 @@ html.modal-open {
 
         @media (max-width: $sm-width) {
             padding: 30px;
-            margin: 30px auto;
         }
     }
 
     &.show {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 320px) {
+            display: block;
+        }
     }
 
     &__title {
