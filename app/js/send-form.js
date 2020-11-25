@@ -8,7 +8,7 @@ modalForm.onsubmit = async e => {
     formResult.classList.remove("result-red");
     formResult.innerHTML = "";
 
-    const response = await fetch("/request-demo", {
+    const response = await fetch("/request_demo.php", {
         method: "POST",
         body: new FormData(modalForm)
     });
