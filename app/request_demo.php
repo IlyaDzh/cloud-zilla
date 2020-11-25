@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-const OWNER_EMAIL = 'ilay00@mail.ru';
+const OWNER_EMAIL = 'alexander.shishow@gmail.com';
 
 function prepare_input($value)
 {
