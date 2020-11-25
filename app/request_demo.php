@@ -35,19 +35,24 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     respond('Email ' . $email . ' is considered invalid.', 400);
 }
 $responseLetterHtml =
-    'Hi ' . $firstName . '!<br><br>' .
+    '<html><body>Hi ' . $firstName . '!<br><br>' .
     'It’s Alex from Cloudzilla.<br><br>' .
     'Thanks for getting in touch — we’re excited to chat with you!<br>' .
-    'Please click this link to schedule your demo:  {<br>' .
-    'cloudzilla.appointlet.com}';
+    'Please click this link to schedule your demo: <br>' .
+    '<a href="https://cloudzilla.appointlet.com">cloudzilla.appointlet.com</a></body></html>';
 $ownerLetterHtml =
-    'Here is new demo request:<br>' .
+    '<html><body>Here is new demo request:<br>' .
     'Email: ' . $email . '<br>' .
     'First Name: ' . $firstName . '<br>' .
     'Last Name: ' . $lastName . '<br>' .
     'Job Title: ' . $jobTitle . '<br>' .
-    'Company Size: ' . $companySize;
-mail($email, 'CloudZilla Demo', $responseLetterHtml);
-mail(OWNER_EMAIL, 'CloudZilla Demo', $ownerLetterHtml);
+    'Company Size: ' . $companySize . '</body></html>';
+$headers = [
+    'From: info@cloudzilla.ai',
+    'MIME-Version: 1.0',
+    'Content-type: text/html; charset=utf-8'
+];
+mail($email, '[Cloudzilla] Scheduling a demo', $responseLetterHtml, $headers);
+mail(OWNER_EMAIL, '[Cloudzilla] Scheduling a demo', $ownerLetterHtml, $headers);
 respond('Request accepted');
 exit;
