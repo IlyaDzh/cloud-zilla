@@ -47,11 +47,11 @@ $ownerLetterHtml =
     'Last Name: ' . $lastName . '<br>' .
     'Job Title: ' . $jobTitle . '<br>' .
     'Company Size: ' . $companySize . '</body></html>';
-$headers = [
+$headers = implode("\r\n", [
     'From: info@cloudzilla.ai',
     'MIME-Version: 1.0',
     'Content-type: text/html; charset=utf-8'
-];
+]);
 mail($email, '[Cloudzilla] Scheduling a demo', $responseLetterHtml, $headers);
 mail(OWNER_EMAIL, '[Cloudzilla] Scheduling a demo', $ownerLetterHtml, $headers);
 respond('Request accepted');
