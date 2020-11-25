@@ -39,7 +39,8 @@ $responseLetterHtml =
     'It’s Alex from Cloudzilla.<br><br>' .
     'Thanks for getting in touch — we’re excited to chat with you!<br>' .
     'Please click this link to schedule your demo: <br>' .
-    '<a href="https://cloudzilla.appointlet.com">cloudzilla.appointlet.com</a></body></html>';
+    '<a href="https://cloudzilla.appointlet.com">cloudzilla.appointlet.com</a><br><br>' .
+    'We look forward to talking with you soon.<br><br>Best,<br>Alex</body></html>';
 $ownerLetterHtml =
     '<html><body>Here is new demo request:<br>' .
     'Email: ' . $email . '<br>' .
